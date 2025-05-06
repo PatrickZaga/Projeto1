@@ -80,8 +80,8 @@ https://colab.research.google.com
 
 # 3. Explicação do codigo
 
-foi usado o comando print para aparecer a imagem para o usuario e logo em seguida colocamos as variaveis chamadas valor1, sinal e valor2 cada uma com o comando de input para o usuario colocar o valor e o sinal, coloquei int no começo para o programa identificar que os numeros que serão colocados serão inteiros
+foi usado o comando (print) para aparecer a imagem para o usuario e logo em seguida colocamos as variaveis chamadas (valor1), (sinal) e (valor2) cada uma com o comando de (input) para o usuario colocar o valor e o sinal, coloquei (int) no começo para o programa identificar que os numeros que serão colocados serão inteiros
 
-depois usando o comando if para caso o sinal seja alguma das opções ele ira executar um comando, e o comando elif usei para cada entrada de sinal que seja igual ao operador selecionado faça um comando
+depois usando o comando (if) para caso o sinal seja alguma das opções ele ira executar um comando, e o comando (elif) usei para cada entrada de sinal que seja igual ao operador selecionado faça um comando
 
-no final usei else para caso o usuario digite um sinal que não existe irá aparecer a mensagem de sinal invalido 
+no final usei (else) para caso o usuario digite um sinal que não existe irá aparecer a mensagem de sinal invalido 
