@@ -40,12 +40,12 @@ Copie e cole o código a seguir dentro do editor:
     		echo "O resultado da multiplicação $num1 * $num2 é $resultado"
     
 	elif [ "$operacao" = "/" ]; then
-    		resultado=$(echo "scale=2; $num1 / $num2" | bc)
-    		echo "O resultado da divisão $num1 / $num2 é $resultado"
+ 		resultado=$(echo "scale=2; $num1 / $num2" | bc)
+      		echo "O resultado da divisão $num1 / $num2 é $resultado"
     
 	else
-    		echo "Operação inválida"
-    		exit 1
+    	echo "Operação inválida"
+    	exit 1
 	fi
 
 	echo "Obrigado por usar esta calculadora, $nome. Até mais!"
