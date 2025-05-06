@@ -37,11 +37,11 @@ Copie e cole o código a seguir dentro do editor:
  
 	elif [ "$operacao" = "*" ]; then 
 		resultado=$(echo "$num1 * $num2" | bc)
-    		echo "O resultado da multiplicação $num1 * $num2 é $resultado"
+  		echo "O resultado da multiplicação $num1 * $num2 é $resultado"
     
 	elif [ "$operacao" = "/" ]; then
  		resultado=$(echo "scale=2; $num1 / $num2" | bc)
-      		echo "O resultado da divisão $num1 / $num2 é $resultado"
+   		echo "O resultado da divisão $num1 / $num2 é $resultado"
     
 	else
     	echo "Operação inválida"
