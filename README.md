@@ -8,7 +8,7 @@ Abra o terminal e use um editor para criar o script, por exemplo:
 
 nano calculadora.sh
 
-# 2. Colar o código no editor na parte com o asterisco coloque mais um "
+# 2. Colar o código no editor
 
 Copie e cole o código a seguir dentro do editor:
 
