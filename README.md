@@ -12,7 +12,7 @@ nano calculadora.sh
 
 Copie e cole o código a seguir dentro do editor:
 
-	#/!bin/bash
+	#!/bin/bash
 
 	echo "Digite seu nome: "
 	read nome
