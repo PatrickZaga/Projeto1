@@ -80,8 +80,35 @@ https://colab.research.google.com
 
 # 3. Explicação do codigo
 
-foi usado o comando (print) para aparecer a imagem para o usuario e logo em seguida colocamos as variaveis chamadas (valor1), (sinal) e (valor2) cada uma com o comando de (input) para o usuario colocar o valor e o sinal, coloquei (int) no começo para o programa identificar que os numeros que serão colocados serão inteiros
+	print('Está é uma calculadora')
 
-depois usando o comando (if) para caso o sinal seja alguma das opções ele ira executar um comando, e o comando (elif) usei para cada entrada de sinal que seja igual ao operador selecionado faça um comando
+Foi usado o comando (print) para aparecer o texto para o usuario
 
-no final usei (else) para caso o usuario digite um sinal que não existe irá aparecer a mensagem de sinal invalido 
+	valor1 = int(input ('Digite o primeiro valor: '))
+	sinal = input('Digite um sinal:')
+	valor2 = int(input ('Digite o segundo valor: '))
+
+E logo em seguida colocamos as variaveis chamadas (valor1), (sinal) e (valor2) cada uma com o comando de (input) para o usuario colocar o valor e o sinal, coloquei (int) no começo para o programa identificar que os numeros que serão colocados serão inteiros
+
+	if sinal == '+':
+  		print('O resultado dos valores', valor1, sinal, valor2, 'é', valor1 + valor2)
+
+Depois usando o comando (if) para caso o sinal seja alguma das opções ele ira executar um comando
+
+	elif sinal == "-":
+  		print('O resultado dos valores', valor1, sinal, valor2, 'é', valor1 - valor2)
+	elif sinal == '*':
+  		print('O resultado dos valores', valor1, sinal, valor2, 'é', valor1 * valor2)
+	elif sinal == '/':
+  		print('O resultado dos valores', valor1, sinal, valor2, 'é', valor1 / valor2)
+	elif sinal == '%':
+  		print('O resultado dos valores', valor1, sinal, valor2, 'é', valor1 % valor2)
+	elif sinal == '**':
+  		print('O resultado dos valores', valor1, sinal, valor2, 'é', valor1 ** valor2)
+
+E o comando (elif) usei para cada entrada de sinal que seja igual ao operador selecionado ira fazer um comando
+
+	else:
+  		print('Sinal invalido')
+
+No final usei (else) para caso o usuario digite um sinal que não existe irá aparecer a mensagem de sinal invalido 
