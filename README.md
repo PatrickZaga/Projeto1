@@ -28,8 +28,10 @@ echo "Digite o segundo número: "
 read num2
 
 if [ "$operacao" = "+" ]; then
-   resultado=$(echo "$num1 + $num2" | bc)
-   echo "O resultado da soma $num1 + $num2 é $resultado"
+	
+ 	resultado=$(echo "$num1 + $num2" | bc)
+  	
+	echo "O resultado da soma $num1 + $num2 é $resultado"
  
 elif [ "$operacao" = "-" ]; then
 	resultado=$(echo "$num1 - $num2" | bc)
