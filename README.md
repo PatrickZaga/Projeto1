@@ -30,15 +30,19 @@ read num2
 if [ "$operacao" = "+" ]; then
 	resultado=$(echo "$num1 + $num2" | bc)
 	echo "O resultado da soma $num1 + $num2 é $resultado"
+ 
 elif [ "$operacao" = "-" ]; then
 	resultado=$(echo "$num1 - $num2" | bc)
 	echo "O resultado da subtração $num1 - $num2 é $resultado"
+ 
 elif [ "$operacao" = "*" ]; then 
  resultado=$(echo "$num1 * $num2" | bc)
     echo "O resultado da multiplicação $num1 * $num2 é $resultado"
+    
 elif [ "$operacao" = "/" ]; then
     resultado=$(echo "scale=2; $num1 / $num2" | bc)
     echo "O resultado da divisão $num1 / $num2 é $resultado"
+    
 else
     echo "Operação inválida"
     exit 1
