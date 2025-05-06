@@ -12,45 +12,43 @@ nano calculadora.sh
 
 Copie e cole o código a seguir dentro do editor:
 
-#!bin/bash
+	#!bin/bash
 
-echo "Digite seu nome: "
-read nome
-echo "Seja bem vindo $nome,está é um calculadora funcional, vamos calcular"
+	echo "Digite seu nome: "
+	read nome
+	echo "Seja bem vindo $nome,está é um calculadora funcional, vamos calcular"
 
-echo "Digite o primeiro número: "
-read num1
+	echo "Digite o primeiro número: "
+	read num1
 
-echo "Digite o operador: "
-read operacao
+	echo "Digite o operador: "
+	read operacao
 
-echo "Digite o segundo número: "
-read num2
+	echo "Digite o segundo número: "
+	read num2
 
-if [ "$operacao" = "+" ]; then
-	
- 	resultado=$(echo "$num1 + $num2" | bc)
-  	
-	echo "O resultado da soma $num1 + $num2 é $resultado"
+	if [ "$operacao" = "+" ]; then
+		resultado=$(echo "$num1 + $num2" | bc)
+  		echo "O resultado da soma $num1 + $num2 é $resultado"
  
-elif [ "$operacao" = "-" ]; then
-	resultado=$(echo "$num1 - $num2" | bc)
-	echo "O resultado da subtração $num1 - $num2 é $resultado"
+	elif [ "$operacao" = "-" ]; then
+		resultado=$(echo "$num1 - $num2" | bc)
+		echo "O resultado da subtração $num1 - $num2 é $resultado"
  
-elif [ "$operacao" = "*" ]; then 
- resultado=$(echo "$num1 * $num2" | bc)
-    echo "O resultado da multiplicação $num1 * $num2 é $resultado"
+	elif [ "$operacao" = "*" ]; then 
+		resultado=$(echo "$num1 * $num2" | bc)
+    		echo "O resultado da multiplicação $num1 * $num2 é $resultado"
     
-elif [ "$operacao" = "/" ]; then
-    resultado=$(echo "scale=2; $num1 / $num2" | bc)
-    echo "O resultado da divisão $num1 / $num2 é $resultado"
+	elif [ "$operacao" = "/" ]; then
+    		resultado=$(echo "scale=2; $num1 / $num2" | bc)
+    		echo "O resultado da divisão $num1 / $num2 é $resultado"
     
-else
-    echo "Operação inválida"
-    exit 1
-fi
+	else
+    		echo "Operação inválida"
+    		exit 1
+	fi
 
-echo "Obrigado por usar esta calculadora, $nome. Até mais!"
+	echo "Obrigado por usar esta calculadora, $nome. Até mais!"
 
 # 3. Salvar e sair do editor
 
